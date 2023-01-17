@@ -10,3 +10,10 @@ function doubleChar(str) {
    return result;
 }
 console.log(doubleChar("Artem"));
+
+// MakeUpperCase
+
+function makeUpperCase(str) {
+   return str = str.toUpperCase();
+}
+console.log(makeUpperCase("important"));
