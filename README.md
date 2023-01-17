@@ -1,0 +1,1 @@
+Here are my solved tasks from CodeWars
