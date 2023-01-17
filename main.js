@@ -14,6 +14,16 @@ console.log(doubleChar("Artem"));
 // MakeUpperCase
 
 function makeUpperCase(str) {
-   return str = str.toUpperCase();
+   let result = str.toUpperCase();
+   return str;
 }
 console.log(makeUpperCase("important"));
+
+//Convert a string to an array
+
+function stringToArray(string) {
+   let result = string.split(" ");
+   return result;
+}
+
+console.log(stringToArray("It is a really important task"));
