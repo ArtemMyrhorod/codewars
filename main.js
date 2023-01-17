@@ -27,3 +27,12 @@ function stringToArray(string) {
 }
 
 console.log(stringToArray("It is a really important task"));
+
+// Convert a Number to a String!
+
+function numberToString(num) {
+   let result = String(num);
+   return result;
+}
+
+console.log(numberToString(1234));
