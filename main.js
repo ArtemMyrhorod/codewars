@@ -50,3 +50,12 @@ function evenOrOdd(number) {
 }
 
 console.log(evenOrOdd(21));
+
+// Returning Strings with name
+
+function greet(name) {
+   let result = `Hello, ${name} how are you doing today?`;
+   return result;
+}
+
+console.log(greet("Artem"));
