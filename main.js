@@ -35,4 +35,18 @@ function numberToString(num) {
    return result;
 }
 
+// Even or Odd
+
 console.log(numberToString(1234));
+
+function evenOrOdd(number) {
+   let result = "";
+   if (number % 2 === 0) {
+      result = "Even";
+   } else {
+      result = "Odd";
+   }
+   return result;
+}
+
+console.log(evenOrOdd(21));
