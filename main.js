@@ -59,3 +59,29 @@ function greet(name) {
 }
 
 console.log(greet("Artem"));
+
+
+// Golf Score
+function golfScore(par, strokes) {
+   // Only change code below this line
+   let result = "";
+   if (par == 4 && strokes == 1 || par == 1 && strokes == 1) {
+      result = "Hole-in-one!";
+   } else if (par == 4 && strokes == 2 || par == 5 && strokes == 2) {
+      result = "Eagle";
+   } else if (par == 4 && strokes == 3) {
+      result = "Birdie";
+   } else if (par == 4 && strokes == 4 || par == 5 && strokes == 5) {
+      result = "Par";
+   } else if (par == 4 && strokes == 5) {
+      result = "Bogey";
+   } else if (par == 4 && strokes == 6) {
+      result = "Double Bogey";
+   } else if (par == 4 && strokes == 7 || par == 5 && strokes == 9) {
+      result = "Go Home!";
+   }
+   return result;
+   // Only change code above this line
+}
+
+golfScore(5, 4);
