@@ -84,4 +84,4 @@ function golfScore(par, strokes) {
    // Only change code above this line
 }
 
-golfScore(5, 4);
+console.log(golfScore(5, 4));
