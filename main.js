@@ -195,3 +195,17 @@ function checkObj(obj, checkProp) {
       return 'Not Found';
    }
 }
+
+// Vowel Count
+
+function getCount(str) {
+   let result = 0;
+   let i = 0;
+   while (i < str.length) {
+      if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+         result++;
+      }
+      i++;
+   }
+   return result;
+}
