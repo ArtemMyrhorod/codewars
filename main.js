@@ -227,3 +227,18 @@ function XO(str) {
    }
    return x === o;
 }
+
+// Transportation on vacation
+
+function rentalCarCost(d) {
+   let result;
+   let moneyPerDay = 40;
+   if (d <= 2) {
+      result = d * moneyPerDay;
+   } else if (d >= 7) {
+      result = d * moneyPerDay - 50;
+   } else {
+      result = d * moneyPerDay - 20;
+   }
+   return result;
+}
