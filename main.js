@@ -209,3 +209,21 @@ function getCount(str) {
    }
    return result;
 }
+
+// Exes and Ohs
+
+function XO(str) {
+   let x = str.match(/x/gi);
+   let o = str.match(/o/gi);
+   if (x !== null) {
+      x = x.length;
+   } else {
+      x = 0;
+   }
+   if (o !== null) {
+      o = o.length;
+   } else {
+      o = 0;
+   }
+   return x === o;
+}
