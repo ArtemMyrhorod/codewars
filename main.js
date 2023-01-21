@@ -180,3 +180,18 @@ function phoneticLookup(val) {
    result = lookup[val];
    return result;
 }
+
+// Getting property from object
+function checkObj(obj, checkProp) {
+   obj = {
+      'gift': "pony",
+      'pet': "kitten",
+      'bed': "sleigh",
+      'city': "Seattle",
+   };
+   if (obj.hasOwnProperty(checkProp)) {
+      return obj[checkProp];
+   } else {
+      return 'Not Found';
+   }
+}
