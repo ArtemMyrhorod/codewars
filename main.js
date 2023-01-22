@@ -242,3 +242,19 @@ function rentalCarCost(d) {
    }
    return result;
 }
+
+//  Calculate BMI
+
+function bmi(weight, height) {
+   let bmiResult = weight / (height ** 2);
+   if (bmiResult <= 18.5) {
+      result = "Underweight";
+   } else if (bmiResult <= 25.0) {
+      result = "Normal";
+   } else if (bmiResult <= 30.0) {
+      result = "Overweight";
+   } else {
+      result = "Obese";
+   }
+   return result;
+}
