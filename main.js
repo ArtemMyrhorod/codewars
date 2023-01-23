@@ -339,3 +339,10 @@ function enough(cap, on, wait) {
       return result = wait - leftSpace;
    }
 }
+
+// Third Angle of a Triangle
+
+
+function otherAngle(a, b) {
+   return 180 - (a + b);
+}
