@@ -358,3 +358,10 @@ function setAlarm(employed, vacation) {
    }
    return result;
 }
+
+//You only need one - Beginner
+
+function check(a, x) {
+   let result = a.includes(x);
+   return result;
+}
