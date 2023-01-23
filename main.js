@@ -346,3 +346,15 @@ function enough(cap, on, wait) {
 function otherAngle(a, b) {
    return 180 - (a + b);
 }
+
+// L1: Set Alarm
+
+function setAlarm(employed, vacation) {
+   let result;
+   if (employed === true && vacation === false) {
+      result = true;
+   } else {
+      result = false;
+   }
+   return result;
+}
