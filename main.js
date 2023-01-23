@@ -327,3 +327,15 @@ function switchItUp(number) {
    }
    return result;
 }
+
+// Will there be enough space?
+
+function enough(cap, on, wait) {
+   let result = 0;
+   let leftSpace = cap - on;
+   if (leftSpace >= wait) {
+      return result;
+   } else if (leftSpace < wait) {
+      return result = wait - leftSpace;
+   }
+}
