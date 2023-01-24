@@ -365,3 +365,10 @@ function check(a, x) {
    let result = a.includes(x);
    return result;
 }
+
+//Parse nice int from char problem
+
+function getAge(inputString) {
+   let result = Number(inputString[0]);
+   return result;
+}
