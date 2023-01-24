@@ -372,3 +372,13 @@ function getAge(inputString) {
    let result = Number(inputString[0]);
    return result;
 }
+
+// Reverse String
+
+function solution(str) {
+   let splitStr = str.split('');
+   let reverseStr = splitStr.reverse();
+   let joinStr = reverseStr.join('');
+   return joinStr;
+}
+console.log(solution('world'));
