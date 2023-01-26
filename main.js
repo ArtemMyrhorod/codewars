@@ -382,3 +382,10 @@ function solution(str) {
    return joinStr;
 }
 console.log(solution('world'));
+
+// Even or Odd
+
+function evenOrOdd(number) {
+   let result = number % 2 === 0 ? 'Even' : 'Odd';
+   return result;
+}
