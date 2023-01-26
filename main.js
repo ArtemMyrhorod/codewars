@@ -396,3 +396,17 @@ function countSheeps(arrayOfSheep) {
    let result = arrayOfSheep.filter(x => x === true).length;
    return result;
 }
+
+// Is n divisible by x and y?
+
+function isDivisible(n, x, y) {
+   let resultX = n / x;
+   let resultY = n / y;
+   let result;
+   if (resultX % 1 === 0 && resultY % 1 === 0) {
+      result = true;
+   } else {
+      result = false;
+   }
+   return result;
+}
