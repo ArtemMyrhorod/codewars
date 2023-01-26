@@ -389,3 +389,10 @@ function evenOrOdd(number) {
    let result = number % 2 === 0 ? 'Even' : 'Odd';
    return result;
 }
+
+// Counting sheep..
+
+function countSheeps(arrayOfSheep) {
+   let result = arrayOfSheep.filter(x => x === true).length;
+   return result;
+}
