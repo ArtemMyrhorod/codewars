@@ -424,3 +424,12 @@ function makeNegative(num) {
    }
    return result;
 }
+
+// Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+   findSmallestInt(args) {
+      let result = Math.min(...args);
+      return result;
+   }
+}
