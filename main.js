@@ -410,3 +410,17 @@ function isDivisible(n, x, y) {
    }
    return result;
 }
+
+// Return Negative
+
+function makeNegative(num) {
+   let result;
+   if (num > 0) {
+      result = num * (-1);
+   } else if (num === 0) {
+      result = 0;
+   } else {
+      return num;
+   }
+   return result;
+}
