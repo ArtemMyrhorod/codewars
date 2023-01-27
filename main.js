@@ -443,3 +443,15 @@ const summation = function (num) {
    }
    return sum;
 };
+
+
+// Add average number from array
+function getAverage(marks) {
+   let sum = 0;
+   let result;
+   let averageOfSum;
+   sum = marks.reduce((a, b) => a + b, 1);
+   averageOfSum = sum / marks.length;
+   result = Math.floor(averageOfSum);
+   return result;
+}
