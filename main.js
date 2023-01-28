@@ -475,3 +475,11 @@ const rps = (p1, p2) => {
       return 'Player 2 won!';
    }
 };
+
+// Remove First and Last Character
+
+function removeChar(str) {
+   let lastCharIndex = str.length - 1;
+   let result = str.slice(1, lastCharIndex);
+   return result;
+}
