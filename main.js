@@ -513,3 +513,10 @@ function repeatStr(n, s) {
    }
    return result;
 }
+
+// Double all numbers in array
+function maps(x) {
+   let result;
+   result = x.map(x => x * 2);
+   return result;
+}
