@@ -503,3 +503,13 @@ function basicOp(operation, value1, value2) {
    }
    return result;
 }
+
+// Repeat string n times
+
+function repeatStr(n, s) {
+   let result = '';
+   for (let i = 0; i < n; i++) {
+      result += s;
+   }
+   return result;
+}
