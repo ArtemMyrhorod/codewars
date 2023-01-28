@@ -537,3 +537,10 @@ function arrayPlusArray(arr1, arr2) {
    let result = sumArr1 + sumArr2;
    return result;
 }
+
+//Century From Year
+
+function century(year) {
+   let result = Math.ceil(year / 100);
+   return result;
+}
