@@ -562,3 +562,20 @@ var humanYearsCatYearsDogYears = function (humanYears) {
    }
    return [humanYears, catYears, dogYears];
 };
+
+
+// Calculate points from array
+
+function points(games) {
+   let result = 0;
+   for (let i = 0; i < games.length; i++) {
+      let currentGame = games[i];
+      let splitCurrentGame = currentGame.split(':');
+      if (+splitCurrentGame[0] > +splitCurrentGame[1]) {
+         result += 3;
+      } else if (+splitCurrentGame[0] === +splitCurrentGame[1]) {
+         result += 1;
+      }
+   }
+   return result;
+}
