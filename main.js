@@ -528,3 +528,12 @@ function hero(bullets, dragons) {
    result = bullets >= dragons * 2;
    return result;
 }
+
+// Array plus array
+
+function arrayPlusArray(arr1, arr2) {
+   let sumArr1 = arr1.reduce((a, b) => a + b);
+   let sumArr2 = arr2.reduce((a, b) => a + b);
+   let result = sumArr1 + sumArr2;
+   return result;
+}
