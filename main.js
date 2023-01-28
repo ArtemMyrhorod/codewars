@@ -520,3 +520,11 @@ function maps(x) {
    result = x.map(x => x * 2);
    return result;
 }
+
+//Is he gonna survive?
+
+function hero(bullets, dragons) {
+   let result;
+   result = bullets >= dragons * 2;
+   return result;
+}
