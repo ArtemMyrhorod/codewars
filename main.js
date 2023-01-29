@@ -579,3 +579,20 @@ function points(games) {
    }
    return result;
 }
+
+// My first callback function
+
+function myCallBack(someNumber) {
+   return someNumber * 2;
+}
+function mainFunction(randomNumber, shouldCall, callback) {
+   let result = randomNumber; // In this example result === 20
+   // In this example, shouldCall is true, so we do reach the callback
+   if (shouldCall) {
+      // In this example callback represents myCallBack from above
+      result = callback(randomNumber);
+   }
+   // Since result was reassigned by the callback function return 40
+   return result;
+}
+console.log(mainFunction(20, true, myCallBack));
