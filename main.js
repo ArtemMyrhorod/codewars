@@ -632,3 +632,16 @@ function sum(arr, n) {
       return sum(arr, n - 1) + arr[n - 1];
    }
 }
+
+// Find the first non-consecutive number
+
+function firstNonConsecutive(arr) {
+   for (let i = 0; i < arr.length - 1; i++) {
+      const currentNumber = arr[i];
+      const nextNumber = arr[i + 1];
+      if (currentNumber + 1 !== nextNumber) {
+         return nextNumber;
+      }
+   }
+   return null;
+}
