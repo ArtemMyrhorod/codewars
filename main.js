@@ -659,3 +659,11 @@ function noOdds(values) {
 }
 
 console.log(noOdds([0, 1, 2, 3]));
+
+
+// Filtering numbers from array with callback
+function filter_list(numArr) {
+   return numArr.filter(arrItem => {
+      return arrItem >= 0 && typeof arrItem === 'number';
+   });
+}
