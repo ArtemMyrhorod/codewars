@@ -690,3 +690,20 @@ function arrayDiff(a, b) {
    });
    return newA;
 }
+
+//Divide and add every digit from number until it lefts one digit
+function persistence(num) {
+   if (num < 10) {
+      return 0;
+   }
+
+   const strVersion = num.toString();
+   const arrVersion = strVersion.split('');
+   const multiplicationValue = arrVersion.reduce((accum, num) => accum *= num);
+
+   if (multiplicationValue >= 10) {
+      return 1 + persistence(multiplicationValue);
+   } else {
+      return 1;
+   }
+}
