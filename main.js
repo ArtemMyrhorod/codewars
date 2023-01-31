@@ -667,3 +667,26 @@ function filter_list(numArr) {
       return arrItem >= 0 && typeof arrItem === 'number';
    });
 }
+
+// Return values that isn`t in both arrays
+
+function arrayDiff(a, b) {
+   if (a.length === 0) {
+      return [];
+   }
+   if (b.length === 0) {
+      return a;
+   }
+   let newA = a;
+   let newB = b;
+   a.forEach((arrItem, arrIndex) => {
+
+      const aCopy = newA.slice();
+      const bCopy = newB.slice();
+      if (b.includes(arrItem)) {
+         newA = aCopy.filter(item => item !== arrItem);
+         newB = bCopy.filter(item => item !== arrItem);
+      }
+   });
+   return newA;
+}
