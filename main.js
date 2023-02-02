@@ -719,3 +719,16 @@ function validatePIN(pin) {
       return false;
    }
 }
+
+// Count lower case letters in string
+
+function lowercaseCount(str) {
+   let count = 0;
+   let desireLetters = /[a-z]/g;
+   for (let i = 0; i < str.length; i++) {
+      if (str[i].match(desireLetters)) {
+         count++;
+      }
+   }
+   return count;
+}
