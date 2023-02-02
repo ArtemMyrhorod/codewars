@@ -707,3 +707,15 @@ function persistence(num) {
       return 1;
    }
 }
+
+// Test valid pin code
+
+function validatePIN(pin) {
+   const fourDigitsRegex = /(^[0-9]{4}$)/;
+   const sixDigitsRegex = /(^[0-9]{6}$)/;
+   if (pin.match(fourDigitsRegex) || pin.match(sixDigitsRegex)) {
+      return true;
+   } else {
+      return false;
+   }
+}
