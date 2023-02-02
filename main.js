@@ -732,3 +732,25 @@ function lowercaseCount(str) {
    }
    return count;
 }
+
+// Upper case letters for two strings
+
+function capitalize(s) {
+   const arr1 = s.split('');
+   const arr2 = s.split('');
+   let res1 = '';
+   let res2 = '';
+   arr1.forEach((item, index, original) => {
+      if (index % 2 === 0) {
+         original[index] = item.toUpperCase();
+      }
+   });
+   arr2.forEach((item, index, original) => {
+      if (index % 2 !== 0) {
+         original[index] = item.toUpperCase();
+      }
+   });
+   res1 = arr1.join('');
+   res2 = arr2.join('');
+   return [res1, res2];
+}
